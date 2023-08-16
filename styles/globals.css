@@ -1,0 +1,71 @@
+/* styles/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'daisyui/dist/full.css'; /* Import daisyUI CSS */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.foot{
+  height: 336px;
+  width: 100% ;
+  background-color: #111D5E;
+}
+.sponsor{
+  height: 600px;
+  width: 100% ;
+  background-color: #F9FAFB;
+}
+.spon{
+  color: #0A142F;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.newf{
+  color : #111D5E;
+}
+.newsf{
+  color : #617187;
+}
+.sizing{
+  width: 400px;
+}
+.conf{
+  Font: Inter;
+  font-size : 48px;
+  font-weight : 700;
+}
+.singleConf{
+  font: Inter;
+  font-weight: 700;
+  font-size: 48px;
+}
+.coloring{
+  color: #0A142F;
+}
+.orgColoring{
+  background-color : #F9FAFB;
+  /* background-color : black; */
+}
+.svgColoring{
+  color: black;
+  background-color: black;
+}
+
