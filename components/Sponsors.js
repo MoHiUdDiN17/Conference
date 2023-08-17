@@ -40,7 +40,7 @@ const Sponsors = ({newId}) =>{
           {
               spon?.map(userData => {
                   return (
-                      <div className='bg-white mt-5 rounded-lg'>
+                      <div className='bg-white mt-5 rounded-lg' key={userData?.name}>
                           <div className='flex gap-5 px-3 py-2'>
                               <div className='w-[20%]'>
                                   <Image

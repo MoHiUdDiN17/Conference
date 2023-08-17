@@ -67,7 +67,7 @@ const Schedule = ({newId}) =>{
             {
                  dateArray?.map((userData,index) => {
                     return (
-                        <div className='bg-white mt-5 rounded-lg px-5'>
+                        <div className='bg-white mt-5 rounded-lg px-5' key={userData?.day}>
                             <div className='flex justify-between gap-5 py-3'>
                                 <div >
                                     <h1 className='text-xl font-bold'>{userData?.split(',')[1]},{userData?.split(',')[2]}</h1>
@@ -78,13 +78,13 @@ const Schedule = ({newId}) =>{
                             </div>
                             <div>
                               {
-                                schedules[index]?.intervals?.map(intervalData =>{
+                                schedules[index]?.intervals?.map((intervalData,index) =>{
                                   return(
-                                    <div>
+                                    <div key={index}>
                                       {
                                         intervalData?.sessions?.map(element=>{
                                           return(
-                                            <div className='pb-4'>
+                                            <div className='pb-4' key={element?.begin}>
                                                   <h1 className='text-sm mt-1'>Duration : {element?.begin}-{element?.end}</h1>
                                                   <h1 className='text-sm mt-1'><span className='font-bold mr-1'>.</span>{element.type.toLowerCase()}</h1> 
                                              </div>

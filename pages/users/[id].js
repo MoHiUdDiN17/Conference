@@ -51,20 +51,20 @@ const UserId = () =>{
             </div>
             <div className="grid grid-cols-6 gap-2 mt-12">
                 <div className="col-span-2">
-                    <LeftSideNav _id = {detailConf?.id}></LeftSideNav>
+                    <LeftSideNav _id = {detailConf?.id} key={detailConf?.id}></LeftSideNav>
                 </div>
                 <div className="col-span-4 mb-6">
                 {
                     secTion === 'Organizer'?
-                        <RightSideNav  newId = {detailConf?.id}></RightSideNav>
+                        <RightSideNav  newId = {detailConf?.id} key={detailConf?.id}></RightSideNav>
                         :
                     secTion === 'Speakers' ?
-                        <Speakers  newId = {detailConf?.id}></Speakers>
+                        <Speakers  newId = {detailConf?.id} key={detailConf?.id}></Speakers>
                         :
                     secTion === 'Schedule' ?
-                        <Schedule  newId = {detailConf?.id}></Schedule>
+                        <Schedule  newId = {detailConf?.id} key={detailConf?.id}></Schedule>
                         :
-                        <Sponsors  newId = {detailConf?.id}></Sponsors>
+                        <Sponsors  newId = {detailConf?.id} key={detailConf?.id}></Sponsors>
 
                 }
                 </div>

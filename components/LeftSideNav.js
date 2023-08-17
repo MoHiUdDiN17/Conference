@@ -46,7 +46,7 @@ const LeftSideNav = ({_id}) =>{
           {
             active?.map(category => {
                 return (
-                    <Link href={`/users/${_id}&${category?.category_name}`}>
+                    <Link href={`/users/${_id}&${category?.category_name}`} key={category?.category_name}>
                         <div className='my-3 font-bold border rounded-lg' onClick={()=>handleClick(category?.category_name)}
                         style={{ backgroundColor: category.bcolor,
                             color: category.color

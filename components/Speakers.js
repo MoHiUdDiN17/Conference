@@ -42,7 +42,7 @@ const Speakers = ({ newId }) => {
       {
         speakers && speakers?.map(userData => {
           return (
-            <div className='bg-white mt-5 rounded-lg'>
+            <div className='bg-white mt-5 rounded-lg' key={userData?.name}>
               <div className='flex gap-5 py-5 px-5'>
                 <Image
                   className='rounded-lg'

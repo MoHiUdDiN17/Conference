@@ -44,7 +44,7 @@ const Confer = () =>{
                     {
                         conference?.map((userData,index) => {
                             return (
-                                <EachCon index={index} userData={userData}/>
+                                <EachCon key={userData?.id} index={index} userData={userData}/>
                             );
                         })
                     }
